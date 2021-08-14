@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./slider/swiper.min.js"></script>
     <script defer src="./js/burger.js"></script>
+    <script defer src="./js/smooth-scroll.min.js"></script>
+    <script defer src="./js/main.js"></script>
+
 </head>
 <body>
     <header class="header">
         <div class="header__space"></div>  <!-- Этот блок будет делать нужный отступ от хедера-->
-       <div class="header__container">
+       <div class="header__container" data-scroll-header>
            <div class="header__wrapper">
-               <a href="#">                                
+                <a href="index.html">                                     
                    <svg class="header__logo" >
                        <use xlink:href="./img/sprite.svg#logo"></use>
                    </svg>   
@@ -47,34 +51,116 @@
 
    <section class="about">
 
-    <div class="burger">
-        <span></span>
-    </div>
-    <nav class="burger-body">
-        <ul class="burger-body__list">
-            <li class="burger-body__item">
-                <a href="" class="burger-body__link">Раздел 1</a>
-            </li>
-            <li class="burger-body__item" >
-                <a href="" class="burger-body__link">Раздел 1</a>
-            </li>
-            <li class="burger-body__item">
-                <a href="" class="burger-body__link">Раздел 1</a>
-            </li>
-        </ul>
-    </nav>
-       <section class="about__start-block">
-           <h2 class="start-block__header some">Welcom to Delegat</h2>
-           <h3 class="start-block__sub-header">International platform for digital accelerator - Delegat</h3>
-           <p class="start-block__text">Return up to 50% of the amount spent during the year for the services you paid</p>
+        <div class="burger-wrapper">
+            <div class="burger">
+                <span></span>
+            </div>
+            <nav class="burger-body">
+                <ul class="burger-body__list">
+                    <li class="burger-body__item">
+                        <a data-scroll href="#start-block" class="burger-body__link">Раздел 1</a>
+                    </li>
+                    <li class="burger-body__item" >
+                        <a data-scroll href="#porpuse" class="burger-body__link">Раздел 1</a>
+                    </li>
+                    <li class="burger-body__item">
+                        <a data-scroll href="#our-services" class="burger-body__link">Раздел 1</a>
+                    </li>
+                    <li class="burger-body__item">
+                        <a data-scroll href="#for-clients" class="burger-body__link">Раздел 1</a>
+                    </li>
+                    <li class="burger-body__item">
+                        <a data-scroll href="#delegat-token" class="burger-body__link">Раздел 1</a>
+                    </li>
+                    <li class="burger-body__item">
+                        <a data-scroll href="#process" class="burger-body__link">Раздел 1</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+       <section class="about__start-block main-container block-marg-bot" id="start-block">
+           <h2 class="start-block__header about-header-classic">Welcom to Delegat</h2>
+           <h3 class="start-block__sub-header about-sub-header-classic">International platform for digital accelerator - Delegat</h3>
+           <p class="start-block__text about-text-classic">Return up to 50% of the amount spent during the year for the services you paid</p>
            <a href="#" class="start-block__link classic-link">Scroll down</a>
        </section>
-       <section class="about__block"></section>
-       <section class="about__block"></section>
-       <section class="about__block"></section>
-       <section class="about__block"></section>
 
+       <section class="about__porpuse main-container block-marg-bot" id="porpuse">
+        <h2 class="porpuse__header about-header-classic">Mission and task of the service</h2>
+        <div class="porpuse__content">
+            <img src="./img/money.png" alt="" class="porpuse__img">
+            <div class="porpuse__text-wrapper">
+                <p class="porpuse__text about-text-classic">To take most of the market for payment for services at the expense of cashback (no one has done this before us), and provide responsible managers to whom you delegate all your operational issues.</p>
+            </div>
 
+        </div>
+        <a href="porpuse.html" class="porpuse__link classic-link">Read more</a>
+        </section>
+    
+       <section class="about__our-services main-container block-marg-bot" name="about" id="our-services">
+            <h2 class="about__our-services__header about-header-classic">Our Services</h2>
+            <div class="our-services__wrapper">
+                <div class="our-services__list-wrapper">
+                    <ul class="our-services__list classic-list">
+                        <li class="list__item classic-list-item">Legal support</li>
+                        <li class="list__item classic-list-item">The financial part of the business</li>
+                        <li class="list__item classic-list-item">Marketing</li>
+                        <li class="list__item classic-list-item">PR</li>
+                        <li class="list__item classic-list-item">Sales department</li>
+                        <li class="list__item classic-list-item">IT services</li>
+                    </ul>
+                </div>
+                <img src="./img/money.png" alt="" class="porpuse__img">
+            </div>
+            <a href="services.html" class="our-services__link classic-link">Read more</a>
+        </section>
+
+        <section class="about__for-clients main-container block-marg-bot" id="for-clients">
+            <h2 class="for-clients__header about-header-classic">Our Clients</h2>
+            <div class="for-clients__content">
+                <img src="./img/money.png" alt="" class="porpuse__img">
+                <div class="for-clients__list-wrapper">
+                    <ul class="for-clients-list classic-list">
+                        <li class="for-clients__item classic-list-item">Working business - because there is no complex solution! We have the best solutions of high quality performance + cashback!</li>
+                        <li class="for-clients__item classic-list-item">Investors - there are no good instruments! We have a decent company with a long-term perspective!</li>
+                        <li class="for-clients__item classic-list-item">Networkers - tired of jars ?! You can participate in the development of a company that has come to the market for a long time, which provides real services / products that you are not ashamed to offer and make money on it!</li>
+                    </ul>
+                </div>
+    
+            </div>
+            <a href="our_clients.html" class="delegat__link classic-link">Read more</a>
+        </section>
+
+        <section class="about__delegat-token main-container block-marg-bot" id="delegat-token">
+            <h2 class="delegat-token__header about-header-classic">Delegat-token and Cashback</h2>
+            <div class="delegat-token__content">
+                <div class="delegat-token__text-wrapper">
+                    <p class="delegat-token__text about-text-classic">Our clients and partners during the year receive up to 50% cashback for paid services through our platform in the Delegat-token.</p>
+                    <p class="delegat-token__text about-text-classic">Paid 1000 $ for the site, for a year you get cashback up to 50% (you will take up to 500 $ in a year)</p>
+                </div>
+                <img src="./img/money.png" alt="" class="delegat-token__img">
+            </div>
+
+            <a href="cashback.html" class="delegat__link classic-link">Read more</a>
+       </section>
+
+       <section class="about__process main-container block-marg-bot" id="process">
+            <h2 class="process__header about-header-classic">What a business process looks like</h2>
+            <div class="process__wrapper">
+                <div class="process__list-wrapper">
+                    <img src="./img/money.png" alt="" class="porpuse__img">
+                    <ul class="process-list classic-list">
+                        <li class="process__item classic-list-item">You leave a request</li>
+                        <li class="process__item classic-list-item">Your personal manager will contact you</li>
+                        <li class="process__item classic-list-item">Your personal manager selects a contractor</li>
+                        <li class="process__item classic-list-item">The manager coordinates all stages of work and the budget</li>
+                        <li class="process__item classic-list-item">You pay for the work on the project</li>
+                        <li class="process__item classic-list-item">On our platform, we charge you cashback in Delegat-token</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="business_look.html" class="our-services__link classic-link">Read more</a>
+        </section>
    </section>
    
    <!-- About Us КОНЕЦ -->
@@ -117,5 +203,6 @@
         <span>copyright © 2021 Cryptomannn all rights reserved</span>
     </div>
 </footer>
+
 </body>
 </html>

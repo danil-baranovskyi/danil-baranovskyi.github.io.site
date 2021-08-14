@@ -16,3 +16,10 @@ const swiper = new Swiper('.swiper-container', {
       
     // },
   });
+
+  let scroll = new SmoothScroll('a[href*="#"]',{
+    header: '[data-scroll-header]',
+    offset: 0,
+    speed: 200,
+    easing: 'linear'
+  });

@@ -1,10 +1,21 @@
 @import'reset.css';
 @import'../font/font.css';
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     color: #333;
     font-family: "Gotham Pro", sans-serif;;
 }
+*{
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
 /*
     === Шапка НАЧАЛО ===
 */
@@ -13,7 +24,17 @@ body{
 /*
     === Модификации НАЧАЛО ===
 */
+.main-container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
+.block-marg-bot{
+    margin-bottom: 35px;
+}
+.block-marg-top{
+    margin-top: 30px;
+}
 .btn-black-mode{
     cursor: pointer;
     border: 2px solid #111;
@@ -77,13 +98,65 @@ body{
     border-radius: 4px;
     transition: 0.3s all;
     width: 180px;
-    height: 35px;
+    height: 39px;
     margin: 0 auto;
+    cursor: pointer;
 }
 .classic-link:hover{
     background-color: #111;
     color: #fff;
 }
+
+.about-header-classic{
+    text-align: center;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    color: #333;
+}
+.about-sub-header-classic{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #333;
+}
+
+.about-text-classic{
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    color: #333;
+}
+
+.classic-list-item{
+    position: relative;
+}
+.classic-list-item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.classic-list-item:before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -15px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #111;
+}
+
+.classic-list{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    
+}
+
+
 /*
     === Модификации КОНЕЦ ===
 */
@@ -92,7 +165,10 @@ body{
 
 
 
-
+/* .header{
+    position: fixed;
+    z-index: 999;
+} */
 .header__space{
     width: 100%;
     height: 110px;
@@ -106,7 +182,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 110px;
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
@@ -245,6 +321,7 @@ body{
     max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .authorization__header{
     margin-bottom: 20px;
@@ -319,7 +396,9 @@ body{
 /*
     === Главная страница НАЧАЛО ===
 */
-
+.{
+    margin-top: 160px;
+}
 .main-page{
     max-width: 1440px;
     margin: 0 auto;
@@ -442,26 +521,154 @@ body{
     margin-top: 50px;
 }
 .start-block__header{
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 56px;
-    color: #333;
+    margin-bottom: 20px;
 }
 .start-block__sub-header{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 36px;
-    color: #333;
+    margin-bottom: 10px;
 }
 .start-block__text{
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 26px;
-    color: #333;
+    margin-bottom: 25%;
 }
 /*
     === start-block КОНЕЦ ===
 */
+
+/*  === Porpuse НАЧАЛО */
+
+.porpuse__content{
+    display: flex;
+    align-items: center;
+}
+
+.porpuse__link{
+    width: 250px;
+}
+.porpuse__link{
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.porpuse__link:last-child{
+   margin-bottom: 30px;
+   margin-top: 0;
+}
+/*  === Porpuse КОНЕЦ */
+
+
+
+/*  === Services НАЧАЛО */
+
+
+
+
+
+.our-services__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__our-services *{
+    z-index: 0;
+}
+
+/*  === Services КОНЕЦ */
+
+/*  === Clients НАЧАЛО */
+
+
+.for-clients__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.for-clients-list{
+    max-width: 700px;
+}
+/*  === Clients КОНЕЦ */
+
+
+/*  === Delegat-token НАЧАЛО */
+
+.delegat-token__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delegat-token__text-wrapper{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.delegat-token__sub-header,
+.delegat-token__text{
+    text-align: left;
+}
+
+.delegat-token{
+    width: 300px;
+    height: 200px;
+}
+/*  === Delegat-token КОНЕЦ */
+
+/*  === Process НАЧАЛО */
+
+
+.process__list-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  === Process КОНЕЦ */
+
+/*
+    === SERVICES.HTML НАЧАЛО  ===
+*/
+
+.services__block-footer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.services__block-header{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+}
+.services__block-footer .porpuse__link{
+    margin: 0;
+}
+
+.block-footer__title{
+    font-style: italic;
+    font-weight: bold;
+}
+/*
+    === SERVICES.HTML КОНЕЦ  ===
+*/
+
+/*
+    === CASHBACK.HTML НАЧАЛО  ===
+*/
+
+.cashback__text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/*
+    === CASHBACK.HTML КОНЕЦ  ===
+*/
+
+
 /* =бургер= Начало */
 
 .burger{
@@ -471,7 +678,7 @@ body{
     height: 50px;
     position: fixed;
     cursor: pointer;
-    z-index: 5;
+    z-index: 20;
     overflow: auto;
     display: block;
 }
@@ -517,6 +724,7 @@ body{
     padding-top: 150px;
     transition: left 0.3s ease 0s;
     box-shadow: 0px 0px 19px -6px #000000;
+    z-index: 19;
 }
 
 .burger-body__list{
@@ -554,6 +762,8 @@ body{
 */
 ._active {
     left: 0;
+    background-color: #fff;
+    opacity: 1;
 }
 /* =бургер= конец */
 
@@ -653,9 +863,108 @@ body{
 
 
 
+/* === Модалка для консультации НАЧАЛО === */
 
+.modal {
+    position: fixed;
+    padding-top: 10%;
+    top: -1800px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    transition: all 0.7s;
+    z-index: 2;
+}
+.overflow{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.01s all;
+    z-index: 3;
+}
+.overflow--active{
+    transform: scale(1);
+    display: block;
+}
 
+.modal-content{
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    z-index: 4;
+}
+.modal--active{
+    top: 0;
+}
 
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size:  40px;
+    font-weight:  bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__header-wrapper{
+    padding-top: 10px;
+}
+.modal__header{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.modal__body{
+    margin-top: 55px;
+}
+
+.contact_input:not(:last-child){
+    margin-bottom: 20px;
+}
+.contact_input:not(:first-child){
+    margin-bottom: 60px;
+}
+
+.contact-link{
+    margin-top: 60px;
+}
+
+.soc-network--modal{
+    padding-top: 35px;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.soc-network__icon--modal{
+    width: 40px;
+    height: 40px;
+}
+/* === Модалка для консультации НАЧАЛО === */
 
 /*
     === Слайдер НАЧАЛО ===

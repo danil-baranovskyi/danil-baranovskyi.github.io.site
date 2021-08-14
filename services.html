@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="./slider/swiper.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/modal_consalt.js"></script>
+    <script defer src="./js/burger.js"></script>
+    <script defer src="./js/smooth-scroll.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <!-- Этот блок будет делать нужный отступ от хедера-->
+          <div class="header__space"></div>  
+        <div class="header__container">
+            <div class="header__wrapper">
+                <a href="index.html">                               
+                    <svg class="header__logo" >
+                        <use xlink:href="./img/sprite.svg#logo"></use>
+                    </svg>   
+                </a>
+                <h2 class="header__header">Digital Marketing Accelerator - Deleget</h2>
+                <div class="soc-network">
+                    <span class="soc-network__header">Social the network: </span>
+                    <div class="soc-network-wrapper">
+                        <div class="soc-network-wrapper__item">
+                            <a href="#" class="soc-network-wrapper__link">
+                                <svg class="soc-network-wrapper__icon">
+                                    <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="soc-network-wrapper__item">
+                            <a href="#" class="soc-network-wrapper__link">
+                                <svg class="soc-network-wrapper__icon">
+                                    <use xlink:href="./img/sprite.svg#telegram-icon"></use>
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="lang-change">En</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <!--  -->
+    <div class="burger-wrapper">
+        <div class="burger">
+            <span></span>
+        </div>
+        <nav class="burger-body">
+            <ul class="burger-body__list">
+                <li class="burger-body__item">
+                    <a data-scroll href="about.html#start-block" class="burger-body__link">Welcom</a>
+                </li>
+                <li class="burger-body__item" >
+                    <a data-scroll href="about.html#porpuse" class="burger-body__link">Mission and Tasks</a>
+                </li>
+                <li class="burger-body__item">
+                    <a data-scroll href="about.html#our-services" class="burger-body__link">Services</a>
+                </li>
+                <li class="burger-body__item">
+                    <a data-scroll href="about.html#for-clients" class="burger-body__link">Our Clients</a>
+                </li>
+                <li class="burger-body__item">
+                    <a data-scroll href="about.html#delegat-token" class="burger-body__link">Cashback</a>
+                </li>
+                <li class="burger-body__item">
+                    <a data-scroll href="about.html#process" class="burger-body__link">Business Look</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="services main-container block-marg-bot block-marg-top">
+        <h2 class="services__header about-header-classic">Our Services</h2>
+        <div class="services__content block-marg-top">
+            <!--  -->
+            <div class="services__block block-marg-top">
+                <h2 class="services__block-header">Legal support</h2>
+                <ul class="services__block-list block-marg-top">
+                    <li class="block-list__item classic-list-item">Company registration;</li>
+                    <li class="block-list__item classic-list-item">Opening accounts abroad;</li>
+                    <li class="block-list__item classic-list-item">Legal support</li>
+                    <li class="block-list__item classic-list-item">Obtaining licenses</li>
+                </ul>
+                <div class="services__block-footer">
+                    <div class="block-footer__wrapper">
+                        <p class="block-footer__text"><span class="block-footer__title">Price</span> - from $ 50 to $ 500,000</p>
+                        <p class="block-footer__text"><span class="block-footer__title">Cashback</span> - up to 20%, 12% customer / 8% contractor</p>
+                    </div>
+                    <button  data-consalt class="porpuse__link classic-link">Order a consultation</button>
+                </div>
+            </div>
+            <!--  -->
+            <div class="services__block block-marg-top">
+                <h2 class="services__block-header">Financial part of the business:</h2>
+                <ul class="services__block-list block-marg-top">
+                    <li class="block-list__item classic-list-item">financial audit;</li>
+                    <li class="block-list__item classic-list-item">business model calculation;</li>
+                    <li class="block-list__item classic-list-item">Investment search</li>
+                    <li class="block-list__item classic-list-item">Company appraisal - (reveal the meaning)</li>
+                </ul>
+                <div class="services__block-footer">
+                    <div class="block-footer__wrapper">
+                        <p class="block-footer__text"><span class="block-footer__title">Price</span> - from $ 50 to $ 300,000</p>
+                        <p class="block-footer__text"><span class="block-footer__title">Cashback</span> - up to 15%, 10% customer / 5% contractor</p>
+                    </div>
+                    <button  data-consalt class="porpuse__link classic-link">Order a consultation</button>
+                </div>
+            </div>
+            <!--  -->
+            <div class="services__block block-marg-top">
+                <h2 class="services__block-header">Marketing and PR services</h2>
+                <ul class="services__block-list block-marg-top">
+                    <li class="block-list__item classic-list-item">Design development;</li>
+                    <li class="block-list__item classic-list-item">Development of logos;</li>
+                    <li class="block-list__item classic-list-item">Beech brand;</li>
+                    <li class="block-list__item classic-list-item">Marketing Kit;</li>
+                    <li class="block-list__item classic-list-item">Competitor analysis;</li>
+                    <li class="block-list__item classic-list-item">Sales funnel development</li>
+                    <li class="block-list__item classic-list-item">Sources of traffic</li>
+                    <li class="block-list__item classic-list-item">Working out the CA + interviewing</li>
+                    <li class="block-list__item classic-list-item">CMM</li>
+                </ul>
+                <div class="services__block-footer">
+                    <div class="block-footer__wrapper">
+                        <p class="block-footer__text"><span class="block-footer__title">Price</span> - from $ 50 to $ 200,000</p>
+                        <p class="block-footer__text"><span class="block-footer__title">Cashback</span> - up to 20%, 12% customer / 8% contractor</p>
+                    </div>
+                    <button  data-consalt class="porpuse__link classic-link">Order a consultation</button>
+                </div>
+            </div>
+            <!--  -->
+            <div class="services__block block-marg-top">
+                <h2 class="services__block-header">IT services</h2>
+                <ul class="services__block-list block-marg-top">
+                    <li class="block-list__item classic-list-item">Development of mobile applications</li>
+                </ul>
+                <div class="services__block-footer">
+                    <div class="block-footer__wrapper">
+                        <p class="block-footer__text"><span class="block-footer__title">Price</span> - from $ 50 to $ 200,000</p>
+                        <p class="block-footer__text"><span class="block-footer__title">Cashback</span> - up to 20%, 12% customer / 8% contractor</p>
+                    </div>
+                    <button  data-consalt class="porpuse__link classic-link">Order a consultation</button>
+                </div>
+            </div>
+            <!--  -->
+            <div class="services__block block-marg-top">
+                <h2 class="services__block-header">Sales department</h2>
+                <ul class="services__block-list block-marg-top">
+                    <li class="block-list__item classic-list-item">CRM setup</li>
+                    <li class="block-list__item classic-list-item">The structure of the company</li>
+                    <li class="block-list__item classic-list-item">Job descriptions for the state</li>
+                    <li class="block-list__item classic-list-item">OCompany product matrix</li>
+                    <li class="block-list__item classic-list-item">Business model analysis</li>
+                </ul>
+                <div class="services__block-footer">
+                    <div class="block-footer__wrapper">
+                        <p class="block-footer__text"><span class="block-footer__title">Price</span> - from $ 50 to $ 200,000</p>
+                        <p class="block-footer__text"><span class="block-footer__title">Cashback</span> - up to 20%, 12% customer / 8% contractor</p>
+                    </div>
+                    <button  data-consalt class="porpuse__link classic-link">Order a consultation</button>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <button  data-consalt class="porpuse__link classic-link">Order a consultation</button>
+        <a href="index.html" class="porpuse__link classic-link">To main</a>
+    </section>
+
+    
+
+    <!--  -->
+
+
+    <!-- Модалка  -->
+    
+    <div class="modal">
+        <div class="overflow"></div>
+        <div class="modal-content">
+          <div class="modal__header-wrapper">
+            <h2 class="modal__header">Связаться с нами</h2>
+            <span class="close" id="modal-close">×</span>
+          </div>
+          <div class="modal__body">
+            <form action="" method="" class="contact__form">
+                <input type="text" class="contact_input classic-input" placeholder="Name" name="name">
+                <input type="text" class="contact__input classic-input" placeholder="Phone" name="password">
+
+                <div class="soc-network-wrapper soc-network--modal">
+                    <div class="soc-network-wrapper__item">
+                        <a href="#" class="soc-network-wrapper__link soc-network__link--modal">
+                            <svg class="soc-network-wrapper__icon soc-network__icon--modal">
+                                <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="soc-network-wrapper__item">
+                        <a href="#" class="soc-network-wrapper__link">
+                            <svg class="soc-network-wrapper__icon soc-network__icon--modal">
+                                <use xlink:href="./img/sprite.svg#telegram-icon"></use>
+                            </svg>  
+                        </a>
+                    </div>
+                </div>
+
+                <button type="submit" class="contact-link classic-link">Connect</button>
+            </form>
+          </div>
+        </div>      
+    </div>
+
+    <!--  -->
+    <footer class="footer">
+        <div class="footer__reg-section">
+            <h3 class="reg-section__header classic-header">Registartion of a trading account</h3>
+            <p class="reg-section__sub-header">Lorem ipsum dolor sit amet consectetur adipisnt culpa sunt voluptatibus.</p>
+            <a href="reg.html" class="link-to-reg">Registartion</a>
+        </div>
+        <div class="footer__container">
+            <a href="#">                                
+                <svg class="footer__logo" >
+                    <use xlink:href="./img/sprite.svg#logo-footer"></use>
+                </svg>   
+            </a>
+            <h2 class="footer__header">Digital Marketing Accelerator - Deleget</h2>
+            <div class="soc-network">
+                <span class="soc-network__header">Social the network: </span>
+                <div class="soc-network-wrapper">
+                    <div class="soc-network-wrapper__item">
+                        <a href="#" class="soc-network-wrapper__link">
+                            <svg class="soc-network-wrapper__icon">
+                                <use xlink:href="./img/sprite.svg#instagram-icon-footer"></use>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="soc-network-wrapper__item">
+                        <a href="#" class="soc-network-wrapper__link">
+                            <svg class="soc-network-wrapper__icon">
+                                <use xlink:href="./img/sprite.svg#telegram-icon-footer"></use>
+                            </svg>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__main-copy">
+            <span>copyright © 2021 Cryptomannn all rights reserved</span>
+        </div>
+    </footer>
+</body>
